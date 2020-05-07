@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 body {
@@ -95,7 +96,7 @@ body {
                     }
 
                     &:nth-child(3) {
-                        width: 100px;
+                        width: 105px;
                     }
 
                     a {
@@ -144,6 +145,11 @@ body {
                             &:hover {
                                 border: none;
                             }
+
+                            img {
+                                position: relative;
+                                top: -2px;
+                            }
                         }
 
                     }
@@ -154,7 +160,9 @@ body {
 }
 
 @media all and (max-width: 724px) {
-    .nav {
+
+    .nav,
+    .logo {
         margin: 0 auto
     }
 }

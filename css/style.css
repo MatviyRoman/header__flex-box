@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 body {
@@ -128,7 +129,7 @@ body {
 }
 
 .header .container .nav ul li:nth-child(3) {
-  width: 100px;
+  width: 105px;
 }
 
 .header .container .nav ul li a {
@@ -179,8 +180,14 @@ body {
   border: none;
 }
 
+.header .container .nav ul li:nth-child(4) a img {
+  position: relative;
+  top: -2px;
+}
+
 @media all and (max-width: 724px) {
-  .nav {
+  .nav,
+  .logo {
     margin: 0 auto;
   }
 }
