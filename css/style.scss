@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #22232b;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 102px;
+
+    .container {
+        align-items: center;
+        flex-wrap: wrap;
+
+        .logo {
+            max-width: 170px;
+            width: 100%;
+            padding-right: 10px;
+
+            .text {
+                display: inline-block;
+                position: relative;
+                left: 10px;
+                top: 12px;
+
+                p {
+                    color: #000603;
+                    font-size: 17px;
+                    font-weight: 600;
+
+                    &+p {
+                        padding-top: 5px;
+                        color: #9f9f9f;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 534px;
+            width: 100%;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+
+                li {
+                    min-height: 20px;
+
+                    &+li {
+                        padding-left: 10px;
+                    }
+
+                    &:nth-child(1) {
+                        width: 60px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 40px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 100px;
+                    }
+
+                    a {
+                        width: 100%;
+                        position: relative;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #22232b;
+                        transition: font-weight .5s;
+
+                        &:hover {
+                            color: #6b1d57;
+                            font-weight: 700;
+                            height: 2px;
+                            border-bottom: 2px solid #6b1d57;
+                            padding-bottom: 5px;
+                            border-width: 70%;
+                        }
+
+                        &.btn {
+                            display: block;
+                            width: 120px;
+                            text-align: center;
+                            height: 50px;
+                            box-shadow: 0 8px 8px rgba(67, 66, 93, 0.25);
+                            border-radius: 6px;
+                            color: #6b1d57;
+                            border: 1px solid #6b1d57;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            font-weight: 700;
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        a {
+                            &:hover {
+                                border: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 724px) {
+    .nav {
+        margin: 0 auto
+    }
+}
